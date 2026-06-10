@@ -770,13 +770,13 @@ h1,h2,h3,h4{font-family:'Cormorant Garamond',serif;}
 # ══════════════════════════════════════════════════════════════════
 st.markdown(f"""
 <nav class="forvm-nav">
-  <a href="?p=home" class="nav-logo">FORVM</a>
+  <a target="_self" href="?p=home" class="nav-logo">FORVM</a>
   <div class="nav-links">
-    <a href="?p=home" class="{nav_active('home')}">Home</a>
-    <a href="?p=catalogo" class="{nav_active('catalogo')}">Catalogo</a>
-    <a href="?p=come_funziona" class="{nav_active('come_funziona')}">Come Funziona</a>
-    <a href="?p=chi_siamo" class="{nav_active('chi_siamo')}">Chi Siamo</a>
-    <a href="?p=partner" class="{nav_active('partner')}">Per gli Host</a>
+    <a target="_self" href="?p=home" class="{nav_active('home')}">Home</a>
+    <a target="_self" href="?p=catalogo" class="{nav_active('catalogo')}">Catalogo</a>
+    <a target="_self" href="?p=come_funziona" class="{nav_active('come_funziona')}">Come Funziona</a>
+    <a target="_self" href="?p=chi_siamo" class="{nav_active('chi_siamo')}">Chi Siamo</a>
+    <a target="_self" href="?p=partner" class="{nav_active('partner')}">Per gli Host</a>
     <a href="{wa_gen}" target="_blank" class="nav-wa">&#128241; Ordina su WhatsApp</a>
   </div>
 </nav>
@@ -840,7 +840,7 @@ if current_page == "home":
         <div class="hero-rule"></div>
         <p class="hero-sub">Prodotti laziali artigianali selezionati dallo chef, consegnati nel tuo appartamento entro 48 ore. Carbonara, Amatriciana, Cacio e Pepe — kit completi per cucinare come un romano.</p>
         <div class="hero-ctas">
-          <a href="?p=catalogo" class="btn-aurum">Scopri le Box</a>
+          <a target="_self" href="?p=catalogo" class="btn-aurum">Scopri le Box</a>
           <a href="{wa_gen}" target="_blank" class="btn-ghost"><span class="dot">&#9679;</span> Ordina su WhatsApp</a>
         </div>
       </div>
@@ -913,7 +913,7 @@ if current_page == "home":
         <div>{right_html}</div>
       </div>
       <div style="text-align:center;padding:36px 0 0;">
-        <a href="?p=catalogo" style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:3px;
+        <a target="_self" href="?p=catalogo" style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:3px;
            color:var(--ink,#2C2419);text-decoration:none;
            border-bottom:1px solid var(--aurum,#B8933F);padding-bottom:4px;">
           VEDI TUTTE LE 10 BOX &rarr;
@@ -975,7 +975,7 @@ if current_page == "home":
               <div class="chef-quote">Non vendo prodotti laziali. Racconto il territorio romano attraverso ogni ingrediente.</div>
               <p>Ogni stagione la selezione si aggiorna con i migliori prodotti freschi. Non troverai mai lo stesso catalogo per 12 mesi.</p>
               <div style="margin-top:28px;">
-                <a href="?p=catalogo" class="btn-aurum" style="display:inline-block;">Scopri il Catalogo</a>
+                <a target="_self" href="?p=catalogo" class="btn-aurum" style="display:inline-block;">Scopri il Catalogo</a>
               </div>
             </div>
             <div class="chef-img">
@@ -1002,7 +1002,7 @@ elif current_page == "catalogo":
     pers_html = ""
     for n in range(1, 6):
         ac = "active" if persons == n else ""
-        pers_html += f'<a href="?p=catalogo&pers={n}" class="pers-btn {ac}">{n}</a>'
+        pers_html += f'<a target="_self" href="?p=catalogo&pers={n}" class="pers-btn {ac}">{n}</a>'
 
     st.markdown(f"""
     <div style="padding:32px 80px 0;background:var(--marble,#F4F0E8);">
@@ -1348,11 +1348,11 @@ st.markdown(f"""
     <div>
       <div class="footer-col-title">Pagine</div>
       <div class="footer-links">
-        <a href="?p=home">Home</a>
-        <a href="?p=catalogo">Catalogo Box</a>
-        <a href="?p=come_funziona">Come Funziona</a>
-        <a href="?p=chi_siamo">Chi Siamo</a>
-        <a href="?p=partner">Partnership Host</a>
+        <a target="_self" href="?p=home">Home</a>
+        <a target="_self" href="?p=catalogo">Catalogo Box</a>
+        <a target="_self" href="?p=come_funziona">Come Funziona</a>
+        <a target="_self" href="?p=chi_siamo">Chi Siamo</a>
+        <a target="_self" href="?p=partner">Partnership Host</a>
       </div>
     </div>
     <div>
