@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+
+<html lang="it"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FORVM - Catalogo</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&amp;family=Cormorant+Garamond:wght@400;500;600&amp;family=DM+Sans:wght@300;400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary-fixed-variant": "#514531",
+                      "on-primary-fixed": "#261a00",
+                      "aurum-dk": "#8B6B28",
+                      "surface-variant": "#e6e2da",
+                      "surface-bright": "#fdf9f1",
+                      "inverse-surface": "#31302b",
+                      "surface": "#fdf9f1",
+                      "on-surface-variant": "#4e4637",
+                      "on-background": "#1c1c17",
+                      "secondary-fixed-dim": "#cec5be",
+                      "surface-container-high": "#ece8e0",
+                      "inverse-on-surface": "#f4f0e8",
+                      "surface-tint": "#785a04",
+                      "on-secondary-fixed": "#1f1b17",
+                      "error-container": "#ffdad6",
+                      "on-tertiary-fixed": "#231a0a",
+                      "primary-container": "#b8933f",
+                      "on-tertiary": "#ffffff",
+                      "surface-dim": "#dddad2",
+                      "primary-fixed": "#ffdf9e",
+                      "on-error-container": "#93000a",
+                      "surface-container-highest": "#e6e2da",
+                      "on-surface": "#1c1c17",
+                      "tertiary-fixed-dim": "#d6c4aa",
+                      "tertiary": "#6a5c47",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-container": "#f1ede5",
+                      "marble-mid": "#EDE7D9",
+                      "outline": "#7f7666",
+                      "on-secondary-container": "#68615c",
+                      "ink": "#2C2419",
+                      "on-tertiary-container": "#3a2f1d",
+                      "tertiary-fixed": "#f3e0c5",
+                      "travertine": "#D4C9B0",
+                      "outline-variant": "#d1c5b2",
+                      "aurum-lt": "#D4AB5A",
+                      "on-primary": "#ffffff",
+                      "tertiary-container": "#a6967e",
+                      "secondary": "#645d58",
+                      "marble-dk": "#E0D8C8",
+                      "background": "#fdf9f1",
+                      "on-secondary": "#ffffff",
+                      "primary": "#785a04",
+                      "inverse-primary": "#eac168",
+                      "on-primary-fixed-variant": "#5b4300",
+                      "on-error": "#ffffff",
+                      "surface-container-low": "#f7f3eb",
+                      "primary-fixed-dim": "#eac168",
+                      "secondary-container": "#e7ded7",
+                      "secondary-fixed": "#eae1da",
+                      "on-primary-container": "#402e00",
+                      "wa-green": "#25D366",
+                      "on-secondary-fixed-variant": "#4b4641",
+                      "error": "#ba1a1a"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "unit": "8px",
+                      "margin-desktop": "64px",
+                      "gutter": "24px",
+                      "container-max": "1280px",
+                      "margin-mobile": "20px"
+              },
+              "fontFamily": {
+                      "body-md": [
+                              "DM Sans"
+                      ],
+                      "body-lg": [
+                              "DM Sans"
+                      ],
+                      "label-caps": [
+                              "Cinzel"
+                      ],
+                      "button-text": [
+                              "Cinzel"
+                      ],
+                      "headline-lg-mobile": [
+                              "Cormorant Garamond"
+                      ],
+                      "headline-lg": [
+                              "Cormorant Garamond"
+                      ],
+                      "display-lg": [
+                              "Cormorant Garamond"
+                      ]
+              },
+              "fontSize": {
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "300"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-caps": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "letterSpacing": "0.3em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "button-text": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "letterSpacing": "0.15em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-lg": [
+                              "40px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "display-lg": [
+                              "64px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+        }
+        
+        .box-card {
+            background-color: theme('colors.surface');
+            border: 1px solid theme('colors.travertine');
+            transition: all 0.3s ease;
+        }
+        
+        .box-card:hover {
+            border-top: 4px solid theme('colors.aurum-lt');
+            background-color: theme('colors.marble-mid');
+        }
+
+        .pers-bar-item.active {
+            background-color: theme('colors.ink');
+            color: theme('colors.aurum-lt');
+        }
+
+        .pers-bar-item {
+            background-color: theme('colors.surface');
+            border: 1px solid theme('colors.travertine');
+            color: theme('colors.outline');
+            transition: all 0.2s ease;
+        }
+    </style>
+</head>
+<body class="font-body-md antialiased min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<nav class="w-full top-0 sticky bg-surface border-b border-travertine z-50">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-unit max-w-container-max mx-auto">
+<div class="font-button-text text-headline-lg text-primary tracking-[0.2em]">FORVM</div>
+<div class="hidden md:flex gap-gutter font-label-caps text-label-caps uppercase tracking-[0.3em]">
+<a class="text-primary border-b border-aurum-dk pb-1 scale-95 transition-all" href="#">Catalogo</a>
+<a class="text-on-surface-variant hover:text-aurum-dk transition-colors duration-300 scale-95 active:opacity-80 transition-all" href="#">Come Funziona</a>
+<a class="text-on-surface-variant hover:text-aurum-dk transition-colors duration-300 scale-95 active:opacity-80 transition-all" href="#">Chi Siamo</a>
+<a class="text-on-surface-variant hover:text-aurum-dk transition-colors duration-300 scale-95 active:opacity-80 transition-all" href="#">Host Partner</a>
+</div>
+<button class="hidden md:block bg-primary text-on-primary font-button-text text-button-text uppercase px-6 py-3 hover:bg-aurum-dk transition-colors">Ordina Ora</button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-16">
+<!-- Header & Filters -->
+<div class="mb-16 text-center md:text-left">
+<h1 class="font-display-lg text-display-lg text-ink mb-6">I Tesori del Lazio</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-10">L'autentica esperienza romana, consegnata con ingredienti selezionati e istruzioni per una preparazione perfetta.</p>
+<div class="flex flex-wrap gap-4 justify-center md:justify-start">
+<button class="px-6 py-2 bg-ink text-aurum-lt font-label-caps text-label-caps border border-ink">Tutte</button>
+<button class="px-6 py-2 bg-transparent text-outline font-label-caps text-label-caps border border-travertine hover:border-outline transition-colors">Classiche</button>
+<button class="px-6 py-2 bg-transparent text-outline font-label-caps text-label-caps border border-travertine hover:border-outline transition-colors">Premium</button>
+<button class="px-6 py-2 bg-transparent text-outline font-label-caps text-label-caps border border-travertine hover:border-outline transition-colors">Stagionali</button>
+</div>
+</div>
+<!-- Catalog Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1: Carbonara -->
+<article class="box-card flex flex-col h-full">
+<div class="relative w-full h-64 overflow-hidden bg-surface-container">
+<div class="absolute top-4 right-4 bg-ink text-aurum-lt font-label-caps text-label-caps px-3 py-1 z-10">Premium</div>
+<img alt="A perfectly plated traditional Roman spaghetti carbonara in a rustic ceramic bowl on a white marble table. The pasta is coated in a rich, glossy egg and pecorino sauce, generously topped with crispy, thick-cut guanciale and a sprinkle of coarse black pepper. Warm, inviting natural light highlights the textures, conveying a high-end, artisanal culinary experience." class="w-full h-full object-cover" data-alt="A perfectly plated traditional Roman spaghetti carbonara in a rustic ceramic bowl on a white marble table. The pasta is coated in a rich, glossy egg and pecorino sauce, generously topped with crispy, thick-cut guanciale and a sprinkle of coarse black pepper. Warm, inviting natural light highlights the textures, conveying a high-end, artisanal culinary experience." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBU_1ssx-wNS8wbIQhucWrRyGzazF215yXxyrr4hc8YQuweZJ3JrSqkjzLF0pgdiDu1clVcy1yALibbSw2x9O0DgtC91eVMa6MwFJTa-bG8Hl1HQG7JVWeDWe8XzJCsofGSRzpNNTPESvEY0Famoi9ZDpr4g94Br1D6KahlMZk3bkIvlQ1lt1V6dlHbJIk7NO7PmI7EiNHJyOGU_cJ_fyqMhKcXgL-T1YFYQ96vrHO_Vs3xu7xDZV2z6_l3QqIzu4yac0adZuEdg7yN"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-ink mb-2">La Carbonara</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Guanciale di Amatrice, Pecorino Romano DOP, uova fresche da allevamento a terra, spaghetti trafilati al bronzo.</p>
+<div class="mb-6">
+<span class="font-label-caps text-label-caps text-outline block mb-2">Persone</span>
+<div class="flex w-full h-12">
+<button class="pers-bar-item flex-1 flex items-center justify-center font-button-text">1</button>
+<button class="pers-bar-item active flex-1 flex items-center justify-center font-button-text">2</button>
+<button class="pers-bar-item flex-1 flex items-center justify-center font-button-text">3</button>
+<button class="pers-bar-item flex-1 flex items-center justify-center font-button-text">4</button>
+<button class="pers-bar-item flex-1 flex items-center justify-center font-button-text">5</button>
+</div>
+</div>
+<div class="flex items-center justify-between mb-6">
+<span class="font-label-caps text-label-caps text-outline">Prezzo</span>
+<span class="font-headline-lg text-headline-lg-mobile text-ink">€ 28</span>
+</div>
+<button class="w-full bg-wa-green text-white font-button-text text-button-text uppercase py-4 flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined">chat</span>
+                        Ordina su WhatsApp
+                    </button>
+</div>
+</article>
+<!-- Card 2: Amatriciana -->
+<article class="box-card flex flex-col h-full">
+<div class="relative w-full h-64 overflow-hidden bg-surface-container">
+<img alt="A generous portion of bucatini all'amatriciana served in a wide, shallow, light-colored ceramic dish resting on a pristine marble surface. The vibrant red tomato sauce clings tightly to the thick pasta, dotted with large, caramelized chunks of guanciale and dusted with grated aged pecorino cheese. The lighting is soft but directed, creating a rich, appetizing glow typical of a premium modern restaurant setting." class="w-full h-full object-cover" data-alt="A generous portion of bucatini all'amatriciana served in a wide, shallow, light-colored ceramic dish resting on a pristine marble surface. The vibrant red tomato sauce clings tightly to the thick pasta, dotted with large, caramelized chunks of guanciale and dusted with grated aged pecorino cheese. The lighting is soft but directed, creating a rich, appetizing glow typical of a premium modern restaurant setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDge0WHEiC6VT0HGlMTUK4hwyuURec8OkRXYW-SMvYIrZ8-w1T3b_nAhW1oHB50Yaf5dUuA0POXX1aQFSYPj1AfAoE9lZ02G2gcpVVqU4eOwat2OH8IEWujajevLjUGd7BKpci6DHNI-cuIJmYqbSHk3SbksJMgU_TqncOVF3yBIZ6zdxTegMf6q4XnPJniBYnKdwX_Zf8HzQD28zf-doNY8zz6ALxckmwuPt4Fvk5k4CDc3iRoR9gP9RP4UR6IwBQtOml95N3yiG3R"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-ink mb-2">L'Amatriciana</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Pomodoro pelato San Marzano, Guanciale croccante, Pecorino Romano DOP, peperoncino fresco, bucatini artigianali.</p>
+<div class="mb-6">
+<span class="font-label-caps text-label-caps text-outline block mb-2">Persone</span>
+<div class="flex w-full h-12">
+<button class="pers-bar-item flex-1 flex items-center justify-center font-button-text">1</button>
+<button class="pers-bar-item active flex-1 flex items-center justify-center font-button-text">2</button>
+<button class="pers-bar-item flex-1 flex items-center justify-center font-button-text">3</button>
+<button class="pers-bar-item flex-1 flex items-center justify-center font-button-text">4</button>
+<button class="pers-bar-item flex-1 flex items-center justify-center font-button-text">5</button>
+</div>
+</div>
+<div class="flex items-center justify-between mb-6">
+<span class="font-label-caps text-label-caps text-outline">Prezzo</span>
+<span class="font-headline-lg text-headline-lg-mobile text-ink">€ 26</span>
+</div>
+<button class="w-full bg-wa-green text-white font-button-text text-button-text uppercase py-4 flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined">chat</span>
+                        Ordina su WhatsApp
+                    </button>
+</div>
+</article>
+<!-- Card 3: Cacio e Pepe -->
+<article class="box-card flex flex-col h-full">
+<div class="relative w-full h-64 overflow-hidden bg-surface-container">
+<img alt="A minimalist and elegant presentation of tonnarelli cacio e pepe in a stark white, deep-rimmed bowl set against a textured light travertine background. The thick pasta strands are enveloped in a creamy, emulsified sauce of pecorino and pasta water, speckled generously with freshly cracked black pepper. The aesthetic is clean, timeless, and distinctly Roman, illuminated by sharp, natural daylight." class="w-full h-full object-cover" data-alt="A minimalist and elegant presentation of tonnarelli cacio e pepe in a stark white, deep-rimmed bowl set against a textured light travertine background. The thick pasta strands are enveloped in a creamy, emulsified sauce of pecorino and pasta water, speckled generously with freshly cracked black pepper. The aesthetic is clean, timeless, and distinctly Roman, illuminated by sharp, natural daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnVus29CfX2EeSDTmRuWyQ8Zey-ZWCFXvAKKRrEWn1eVy1u7xaRCq9nTQwL9ANoiAQjLvSLmA-Y3eGsHxt6NMoczh_DZrPPjS1uTQU8yPWo10LJFPdPsbtEPSunKhDH8Jvt9ORwbmBRxiVe8Okm51uzLSOzIcgEy_-8tSXwYiYZVfkT1uOhgzTJ39_8UjV0JnO_3lvDTYLdqIhvKxorCArhThGQo0OrJD8aUPFyNENbae_51TOTfpJZRH7I6uTFrC4iQ2No1NILYkr"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-ink mb-2">La Cacio e Pepe</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Blend esclusivo di tre stagionature di Pecorino Romano, pepe nero in grani tostato, tonnarelli freschi.</p>
+<div class="mb-6">
+<span class="font-label-caps text-label-caps text-outline block mb-2">Persone</span>
+<div class="flex w-full h-12">
+<button class="pers-bar-item flex-1 flex items-center justify-center font-button-text">1</button>
+<button class="pers-bar-item active flex-1 flex items-center justify-center font-button-text">2</button>
+<button class="pers-bar-item flex-1 flex items-center justify-center font-button-text">3</button>
+<button class="pers-bar-item flex-1 flex items-center justify-center font-button-text">4</button>
+<button class="pers-bar-item flex-1 flex items-center justify-center font-button-text">5</button>
+</div>
+</div>
+<div class="flex items-center justify-between mb-6">
+<span class="font-label-caps text-label-caps text-outline">Prezzo</span>
+<span class="font-headline-lg text-headline-lg-mobile text-ink">€ 24</span>
+</div>
+<button class="w-full bg-wa-green text-white font-button-text text-button-text uppercase py-4 flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined">chat</span>
+                        Ordina su WhatsApp
+                    </button>
+</div>
+</article>
+<!-- Card 4: Gricia -->
+<article class="box-card flex flex-col h-full">
+<div class="relative w-full h-64 overflow-hidden bg-surface-container">
+<img alt="Rigatoni alla Gricia served in a heavy stoneware bowl on an aged wooden table, hinting at a high-end rustic setting. The pasta is glistening with rendered pork fat and pecorino cream, dotted with substantial, crispy pieces of guanciale. The lighting is warm and slightly moody, emphasizing the rich, savory textures of the ancient Roman dish." class="w-full h-full object-cover" data-alt="Rigatoni alla Gricia served in a heavy stoneware bowl on an aged wooden table, hinting at a high-end rustic setting. The pasta is glistening with rendered pork fat and pecorino cream, dotted with substantial, crispy pieces of guanciale. The lighting is warm and slightly moody, emphasizing the rich, savory textures of the ancient Roman dish." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8-OEruc-OmPW98sb3OFxR1y1WG5X9Rl70H8kbDbkP7dBRjXRGwB_rqAZNjnOmbmFTsLqYtrqpTzJdPJwo5Mtf8hmcCGQPFf586o-Sh_2LV0BlOWMVZIyPiDOwkakkDBw18CXAPgDS9xDVY-gKtCEAa3pTIhlUmI9JWenJzIP977mC_I54lkyRUERmh0ELgPbUznWMSArKkW0AAI9yHbMb2usQGNhNXhQahRKyqxdq7SKF5ZsVEZCFPeoJ9EXdK8QNoeos9kKv48e2"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-ink mb-2">La Gricia</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">L'antenata della Carbonara. Guanciale croccante, abbondante Pecorino Romano DOP e rigatoni rigati.</p>
+<div class="mb-6">
+<span class="font-label-caps text-label-caps text-outline block mb-2">Persone</span>
+<div class="flex w-full h-12">
+<button class="pers-bar-item flex-1 flex items-center justify-center font-button-text">1</button>
+<button class="pers-bar-item active flex-1 flex items-center justify-center font-button-text">2</button>
+<button class="pers-bar-item flex-1 flex items-center justify-center font-button-text">3</button>
+<button class="pers-bar-item flex-1 flex items-center justify-center font-button-text">4</button>
+<button class="pers-bar-item flex-1 flex items-center justify-center font-button-text">5</button>
+</div>
+</div>
+<div class="flex items-center justify-between mb-6">
+<span class="font-label-caps text-label-caps text-outline">Prezzo</span>
+<span class="font-headline-lg text-headline-lg-mobile text-ink">€ 25</span>
+</div>
+<button class="w-full bg-wa-green text-white font-button-text text-button-text uppercase py-4 flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined">chat</span>
+                        Ordina su WhatsApp
+                    </button>
+</div>
+</article>
+<!-- Card 5: Saltimbocca -->
+<article class="box-card flex flex-col h-full">
+<div class="relative w-full h-64 overflow-hidden bg-surface-container">
+<div class="absolute top-4 right-4 bg-marble-dk text-stone-dk font-label-caps text-label-caps px-3 py-1 z-10 border border-travertine">Stagionale</div>
+<img alt="Beautifully prepared Saltimbocca alla Romana resting on a sleek slate plate atop a marble counter. Thin slices of veal are visible, topped with fresh sage leaves and draped with delicate prosciutto crudo, pan-seared to a golden brown and glazed with a white wine reduction. The scene is elegant and appetizing, lit with bright, crisp light typical of a premium food editorial." class="w-full h-full object-cover" data-alt="Beautifully prepared Saltimbocca alla Romana resting on a sleek slate plate atop a marble counter. Thin slices of veal are visible, topped with fresh sage leaves and draped with delicate prosciutto crudo, pan-seared to a golden brown and glazed with a white wine reduction. The scene is elegant and appetizing, lit with bright, crisp light typical of a premium food editorial." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDd-fSL0We0rEOriJwtfohXFAgwjM7VUCJUaPB-GB5Gx_agqGY5Ky0EmN0bra1b6cHefC7d5DmcFzAewBeuhkepfDzdLNmK6THw8C21r9lU8Y1rqffnDYOFmQQJBqz9e52rjbxqrn9icM3ZJS_EcI4Gsvui8D9pkeclPgMIXQPFYNksBL7xw4jQ8brps2f377daiRCpZz6I9WlfyT9t0HdXq2O62iqB9mxsoPFpKiqLNx07SFKJtDoqko4mcazpmRH3rzFjB3hlDYOY"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-ink mb-2">I Saltimbocca</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Fettine di vitello selezionato, Prosciutto Crudo di Parma stagionato 24 mesi, salvia fresca e burro chiarificato.</p>
+<div class="mb-6">
+<span class="font-label-caps text-label-caps text-outline block mb-2">Persone</span>
+<div class="flex w-full h-12">
+<button class="pers-bar-item flex-1 flex items-center justify-center font-button-text">1</button>
+<button class="pers-bar-item active flex-1 flex items-center justify-center font-button-text">2</button>
+<button class="pers-bar-item flex-1 flex items-center justify-center font-button-text">3</button>
+<button class="pers-bar-item flex-1 flex items-center justify-center font-button-text">4</button>
+<button class="pers-bar-item flex-1 flex items-center justify-center font-button-text">5</button>
+</div>
+</div>
+<div class="flex items-center justify-between mb-6">
+<span class="font-label-caps text-label-caps text-outline">Prezzo</span>
+<span class="font-headline-lg text-headline-lg-mobile text-ink">€ 32</span>
+</div>
+<button class="w-full bg-wa-green text-white font-button-text text-button-text uppercase py-4 flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined">chat</span>
+                        Ordina su WhatsApp
+                    </button>
+</div>
+</article>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-20 bg-ink border-t border-aurum-dk">
+<div class="flex flex-col items-center gap-gutter py-margin-desktop px-margin-mobile md:px-margin-desktop w-full max-w-container-max mx-auto">
+<div class="font-button-text text-headline-lg text-aurum-lt tracking-[0.2em] mb-4">FORVM</div>
+<div class="flex flex-wrap justify-center gap-6 font-label-caps text-label-caps mb-8">
+<a class="text-marble-dk opacity-80 hover:text-white transition-opacity cursor-pointer" href="#">Privacy Policy</a>
+<a class="text-marble-dk opacity-80 hover:text-white transition-opacity cursor-pointer" href="#">Termini di Servizio</a>
+<a class="text-marble-dk opacity-80 hover:text-white transition-opacity cursor-pointer" href="#">Contatti</a>
+<a class="text-marble-dk opacity-80 hover:text-white transition-opacity cursor-pointer" href="#">FAQ</a>
+</div>
+<p class="font-label-caps text-label-caps text-aurum-lt text-center tracking-widest">© MMXXIV FORVM GOURMET. REGOLE D'ORO DELLA CUCINA ROMANA.</p>
+</div>
+</footer>
+<script>
+        // Simple script to handle person selector interaction
+        document.querySelectorAll('.box-card').forEach(card => {
+            const buttons = card.querySelectorAll('.pers-bar-item');
+            buttons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    buttons.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    // In a real app, this would also update the price dynamically
+                });
+            });
+        });
+    </script>
+</body></html>

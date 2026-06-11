@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FORVM | Il Mercato di Roma</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&amp;family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-tint": "#785a04",
+                      "aurum-lt": "#D4AB5A",
+                      "on-tertiary-container": "#3a2f1d",
+                      "error": "#ba1a1a",
+                      "tertiary": "#6a5c47",
+                      "tertiary-container": "#a6967e",
+                      "tertiary-fixed-dim": "#d6c4aa",
+                      "on-primary-fixed": "#261a00",
+                      "secondary-fixed": "#eae1da",
+                      "surface-container-high": "#ece8e0",
+                      "on-primary-container": "#402e00",
+                      "marble-mid": "#EDE7D9",
+                      "on-tertiary-fixed-variant": "#514531",
+                      "on-secondary-fixed-variant": "#4b4641",
+                      "primary-fixed-dim": "#eac168",
+                      "travertine": "#D4C9B0",
+                      "surface-container-lowest": "#ffffff",
+                      "on-tertiary-fixed": "#231a0a",
+                      "outline-variant": "#d1c5b2",
+                      "surface-container-highest": "#e6e2da",
+                      "marble-dk": "#E0D8C8",
+                      "on-primary": "#ffffff",
+                      "background": "#fdf9f1",
+                      "secondary-container": "#e7ded7",
+                      "on-error": "#ffffff",
+                      "surface-container": "#f1ede5",
+                      "error-container": "#ffdad6",
+                      "secondary-fixed-dim": "#cec5be",
+                      "inverse-surface": "#31302b",
+                      "tertiary-fixed": "#f3e0c5",
+                      "secondary": "#645d58",
+                      "inverse-primary": "#eac168",
+                      "on-surface-variant": "#4e4637",
+                      "on-surface": "#1c1c17",
+                      "inverse-on-surface": "#f4f0e8",
+                      "ink": "#2C2419",
+                      "primary-container": "#b8933f",
+                      "wa-green": "#25D366",
+                      "surface": "#fdf9f1",
+                      "surface-container-low": "#f7f3eb",
+                      "surface-variant": "#e6e2da",
+                      "on-tertiary": "#ffffff",
+                      "outline": "#7f7666",
+                      "primary-fixed": "#ffdf9e",
+                      "on-background": "#1c1c17",
+                      "aurum-dk": "#8B6B28",
+                      "surface-dim": "#dddad2",
+                      "on-primary-fixed-variant": "#5b4300",
+                      "surface-bright": "#fdf9f1",
+                      "primary": "#785a04",
+                      "on-secondary-fixed": "#1f1b17",
+                      "on-secondary": "#ffffff",
+                      "on-secondary-container": "#68615c",
+                      "on-error-container": "#93000a"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-desktop": "64px",
+                      "container-max": "1280px",
+                      "margin-mobile": "20px",
+                      "unit": "8px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "body-lg": [
+                              "Cormorant Garamond"
+                      ],
+                      "body-md": [
+                              "DM Sans"
+                      ],
+                      "label-caps": [
+                              "Cinzel"
+                      ],
+                      "headline-lg-mobile": [
+                              "Cormorant Garamond"
+                      ],
+                      "headline-lg": [
+                              "Cormorant Garamond"
+                      ],
+                      "display-lg": [
+                              "Cormorant Garamond"
+                      ],
+                      "button-text": [
+                              "Cinzel"
+                      ]
+              },
+              "fontSize": {
+                      "body-lg": [
+                              "22px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "300"
+                              }
+                      ],
+                      "label-caps": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "letterSpacing": "0.3em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-lg": [
+                              "40px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "display-lg": [
+                              "64px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "button-text": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "letterSpacing": "0.15em",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        body { background-color: #fdf9f1; }
+        
+        .box-card {
+            background-color: #EDE7D9;
+            border: 1px solid #D4C9B0;
+            transition: all 0.3s ease;
+        }
+        
+        .box-card:hover {
+            border-top: 4px solid #D4AB5A;
+        }
+
+        .pers-bar-item {
+            background-color: #EDE7D9;
+            border: 1px solid #D4C9B0;
+            color: #645d58;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .pers-bar-item.active {
+            background-color: #2C2419;
+            color: #D4AB5A;
+        }
+
+        .btn-aurum {
+            background-color: #D4AB5A;
+            color: #2C2419;
+            transition: opacity 0.3s ease;
+        }
+        .btn-aurum:hover {
+            opacity: 0.9;
+        }
+
+        .btn-wa {
+            background-color: #25D366;
+            color: #ffffff;
+            transition: opacity 0.3s ease;
+        }
+        .btn-wa:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body class="antialiased text-ink font-body-md bg-ink">
+<!-- TopNavBar -->
+<nav class="bg-ink flex justify-between items-center w-full px-margin-desktop py-6 max-w-container-max mx-auto border-b border-aurum-lt/20 sticky top-0 z-50">
+<div class="flex items-center gap-12">
+<a class="font-label-caps text-label-caps text-aurum-lt tracking-[0.3em]" href="#">FORVM</a>
+<div class="hidden md:flex gap-8">
+<a class="font-label-caps text-label-caps text-aurum-lt hover:text-aurum-lt transition-colors" href="#">Home</a>
+<a class="font-label-caps text-label-caps text-marble-dk/80 hover:text-aurum-lt transition-colors" href="#">Catalogo</a>
+<a class="font-label-caps text-label-caps text-marble-dk/80 hover:text-aurum-lt transition-colors" href="#">Come Funziona</a>
+<a class="font-label-caps text-label-caps text-marble-dk/80 hover:text-aurum-lt transition-colors" href="#">Chi Siamo</a>
+</div>
+</div>
+<div class="flex items-center gap-6 text-aurum-lt">
+<span class="material-symbols-outlined hover:opacity-80 transition-opacity cursor-pointer" data-icon="shopping_bag">shopping_bag</span>
+<span class="material-symbols-outlined hover:opacity-80 transition-opacity cursor-pointer" data-icon="person">person</span>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative w-full min-h-screen flex flex-col items-center justify-center text-center px-margin-desktop py-20 overflow-hidden bg-ink">
+<div class="absolute inset-0 z-0">
+<img alt="Monumental background" class="w-full h-full object-cover opacity-50 mix-blend-overlay" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6qjTvFDXPV_p3_VJW-QQwC5ID-VABnYyHm10cqwlO47Nm0daJHZ_bNo6isp8r8BtAE-lp37NbzQYPBFIhFXDhFk1MVjanpT8ntbZ1tffyoOfshUD4v4DfnHR4LuggVSkxBleghVf2Z6MsZf0sIwu28gqzZUQYBzVc53HBmaV6kt7cDizKPbmiSNx01aozTW1RTlaNrNrAhssybULpsjp4SEhNrb9w-DBiJPbUItKxTdO7XGDP7g69rsty_BdAWps3lfIt_p_nHf--"/>
+<div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/60 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-4xl mx-auto flex flex-col items-center gap-8 mt-12">
+<img alt="Roman Arch Logo" class="w-64 h-auto mb-8 drop-shadow-[0_0_30px_rgba(212,171,90,0.3)] mix-blend-screen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDM8_B4nsLajYRhuNkfU5oZjdXzEncSglOK5StINc3jFkELMOWNi3oQfylKbtJcTYUT_iYv9szl2KLQBE4G5IheejKmU9lMKPnApjn-9llRlXqAqWcNqXa2kPV6m00P6e9g5On32DCr0e75scULW915_IALBnP3CeQR0xk5Kcnr3VU5sc-rriUdexeWCCGKEDKwMHkfvIt7I5VTnFjnlMv93FYlkQ7-wuy1krn7CO51dq9C92UKwDvI_aVam7ZbZ6JrfM3ylnCReZG"/>
+<h1 class="font-display-lg text-display-lg text-aurum-lt leading-tight">IL MERCATO DI ROMA.<br/>2000 ANNI DOPO.</h1>
+<h2 class="font-label-caps text-xl md:text-2xl text-marble-dk tracking-[0.4em] mt-4 uppercase">AB AGRO AD MENSAM</h2>
+<a class="btn-aurum font-button-text text-button-text px-10 py-5 mt-12 uppercase tracking-[0.2em] inline-flex items-center gap-3 rounded-sm" href="/catalog">
+                ENTRA NEL FORVM
+</a>
+</div>
+</header>
+<!-- Introduction Section -->
+<section class="max-w-4xl mx-auto px-margin-desktop py-32 text-center flex flex-col gap-12 relative z-10 bg-ink">
+<div class="flex flex-col gap-4 items-center">
+<span class="font-label-caps text-aurum-lt text-sm tracking-[0.4em] uppercase">L'Anima di FORVM</span>
+<div class="w-12 h-px bg-aurum-lt/50 my-2"></div>
+<h2 class="font-headline-lg text-headline-lg text-marble-dk leading-snug">
+    Selezioniamo i migliori ingredienti artigianali dalla regione Lazio.
+</h2>
+</div>
+<p class="font-body-lg text-body-lg text-marble-dk/70 max-w-3xl mx-auto leading-relaxed font-light">
+    FORVM è più di un mercato; è la manifestazione di una qualità eterna. Viaggiamo attraverso la campagna romana per collaborare con artigiani che preservano tecniche secolari. Dall'autentico Guanciale di Amatrice alla pasta rigorosamente trafilata al bronzo, portiamo la vera essenza della cucina romana direttamente a casa tua.
+</p>
+</section>
+<!-- Come Funziona -->
+<section class="py-32 border-t border-aurum-lt/10 bg-ink relative z-10 px-margin-desktop">
+<h2 class="font-label-caps text-aurum-lt text-sm tracking-[0.4em] uppercase text-center mb-20">COME FUNZIONA</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-container-max mx-auto">
+<div class="flex flex-col items-center text-center gap-6">
+<span class="font-display-lg text-aurum-lt opacity-30 leading-none">I</span>
+<h4 class="font-label-caps text-label-caps text-marble-dk">Seleziona</h4>
+<p class="font-body-md text-marble-dk/60 text-sm px-4 font-light">Scegli una classica ricetta romana e il numero di ospiti.</p>
+</div>
+<div class="flex flex-col items-center text-center gap-6">
+<span class="font-display-lg text-aurum-lt opacity-30 leading-none">II</span>
+<h4 class="font-label-caps text-label-caps text-marble-dk">Ordina</h4>
+<p class="font-body-md text-marble-dk/60 text-sm px-4 font-light">Invia la tua richiesta in modo semplice con un solo clic.</p>
+</div>
+<div class="flex flex-col items-center text-center gap-6">
+<span class="font-display-lg text-aurum-lt opacity-30 leading-none">III</span>
+<h4 class="font-label-caps text-label-caps text-marble-dk">Conferma</h4>
+<p class="font-body-md text-marble-dk/60 text-sm px-4 font-light">Elabora il tuo pagamento in modo sicuro dopo la conferma.</p>
+</div>
+<div class="flex flex-col items-center text-center gap-6">
+<span class="font-display-lg text-aurum-lt opacity-30 leading-none">IV</span>
+<h4 class="font-label-caps text-label-caps text-marble-dk">Ricevi</h4>
+<p class="font-body-md text-marble-dk/60 text-sm px-4 font-light">Consegna garantita alla tua porta a Roma entro 48h.</p>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-black w-full py-20 px-margin-desktop flex flex-col items-center gap-12 border-t border-aurum-lt/20 relative z-10">
+<a class="font-label-caps text-label-caps text-aurum-lt tracking-[0.4em]" href="#">FORVM</a>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-label-caps text-label-caps text-marble-dk/60 hover:text-aurum-lt transition-colors duration-300" href="#">Informativa sulla Privacy</a>
+<a class="font-label-caps text-label-caps text-marble-dk/60 hover:text-aurum-lt transition-colors duration-300" href="#">Termini di Servizio</a>
+<a class="font-label-caps text-label-caps text-marble-dk/60 hover:text-aurum-lt transition-colors duration-300" href="#">Spedizioni</a>
+<a class="font-label-caps text-label-caps text-marble-dk/60 hover:text-aurum-lt transition-colors duration-300" href="#">Contattaci</a>
+</div>
+<p class="font-body-md text-body-md text-marble-dk/40 mt-4 font-light tracking-widest text-sm uppercase">© MMXXIV FORVM. QUALITÀ ETERNA.</p>
+</footer>
+</body></html>

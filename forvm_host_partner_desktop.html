@@ -1,0 +1,478 @@
+<!DOCTYPE html><html lang="it"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Host Partner - FORVM</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&amp;family=Cormorant+Garamond:wght@400;500;600&amp;family=DM+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary-fixed-variant": "#514531",
+                      "on-primary-fixed": "#261a00",
+                      "aurum-dk": "#8B6B28",
+                      "surface-variant": "#e6e2da",
+                      "surface-bright": "#fdf9f1",
+                      "inverse-surface": "#31302b",
+                      "surface": "#fdf9f1",
+                      "on-surface-variant": "#4e4637",
+                      "on-background": "#1c1c17",
+                      "secondary-fixed-dim": "#cec5be",
+                      "surface-container-high": "#ece8e0",
+                      "inverse-on-surface": "#f4f0e8",
+                      "surface-tint": "#785a04",
+                      "on-secondary-fixed": "#1f1b17",
+                      "error-container": "#ffdad6",
+                      "on-tertiary-fixed": "#231a0a",
+                      "primary-container": "#b8933f",
+                      "on-tertiary": "#ffffff",
+                      "surface-dim": "#dddad2",
+                      "primary-fixed": "#ffdf9e",
+                      "on-error-container": "#93000a",
+                      "surface-container-highest": "#e6e2da",
+                      "on-surface": "#1c1c17",
+                      "tertiary-fixed-dim": "#d6c4aa",
+                      "tertiary": "#6a5c47",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-container": "#f1ede5",
+                      "marble-mid": "#EDE7D9",
+                      "outline": "#7f7666",
+                      "on-secondary-container": "#68615c",
+                      "ink": "#2C2419",
+                      "on-tertiary-container": "#3a2f1d",
+                      "tertiary-fixed": "#f3e0c5",
+                      "travertine": "#D4C9B0",
+                      "outline-variant": "#d1c5b2",
+                      "aurum-lt": "#D4AB5A",
+                      "on-primary": "#ffffff",
+                      "tertiary-container": "#a6967e",
+                      "secondary": "#645d58",
+                      "marble-dk": "#E0D8C8",
+                      "background": "#fdf9f1",
+                      "on-secondary": "#ffffff",
+                      "primary": "#785a04",
+                      "inverse-primary": "#eac168",
+                      "on-primary-fixed-variant": "#5b4300",
+                      "on-error": "#ffffff",
+                      "surface-container-low": "#f7f3eb",
+                      "primary-fixed-dim": "#eac168",
+                      "secondary-container": "#e7ded7",
+                      "secondary-fixed": "#eae1da",
+                      "on-primary-container": "#402e00",
+                      "wa-green": "#25D366",
+                      "on-secondary-fixed-variant": "#4b4641",
+                      "error": "#ba1a1a"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "unit": "8px",
+                      "margin-desktop": "64px",
+                      "gutter": "24px",
+                      "container-max": "1280px",
+                      "margin-mobile": "20px"
+              },
+              "fontFamily": {
+                      "body-md": [
+                              "DM Sans"
+                      ],
+                      "body-lg": [
+                              "DM Sans"
+                      ],
+                      "label-caps": [
+                              "Cinzel"
+                      ],
+                      "button-text": [
+                              "Cinzel"
+                      ],
+                      "headline-lg-mobile": [
+                              "Cormorant Garamond"
+                      ],
+                      "headline-lg": [
+                              "Cormorant Garamond"
+                      ],
+                      "display-lg": [
+                              "Cormorant Garamond"
+                      ]
+              },
+              "fontSize": {
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "300"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-caps": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "letterSpacing": "0.3em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "button-text": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "letterSpacing": "0.15em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-lg": [
+                              "40px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "display-lg": [
+                              "64px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+            },
+          }
+        }
+    </script>
+<style>
+        body {
+            background-color: #fdf9f1;
+            color: #1c1c17;
+            overflow-x: hidden;
+        }
+        
+        .lapidary-border {
+            border: 1px solid #D4C9B0;
+        }
+        
+        .glass-panel {
+            background: rgba(253, 249, 241, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(212, 201, 176, 0.4);
+        }
+        
+        /* Subtle texture overlay to simulate stone/marble */
+        .stone-texture {
+            position: relative;
+        }
+        .stone-texture::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><filter id="noiseFilter"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(%23noiseFilter)" opacity="0.03"/></svg>');
+            pointer-events: none;
+            z-index: 10;
+        }
+        
+        .hover-aurum-top {
+            transition: all 0.3s ease;
+        }
+        .hover-aurum-top:hover {
+            border-top-color: #D4AB5A;
+            border-top-width: 4px;
+            padding-top: calc(theme('spacing.gutter') - 3px); /* Compensate for border growth to avoid layout shift */
+        }
+        
+        .input-ledger {
+            border: none;
+            border-bottom: 1px solid #7f7666;
+            background: transparent;
+            border-radius: 0;
+            padding-left: 0;
+            padding-right: 0;
+            transition: border-color 0.3s ease;
+        }
+        .input-ledger:focus {
+            outline: none;
+            box-shadow: none;
+            border-bottom-color: #D4AB5A;
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-background antialiased selection:bg-aurum-lt selection:text-ink stone-texture">
+<!-- TopAppBar -->
+<header class="bg-surface dark:bg-on-background w-full top-0 sticky border-b border-travertine dark:border-on-tertiary-fixed-variant z-50">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-unit max-w-container-max mx-auto h-[72px]">
+<!-- Logo -->
+<a class="font-button-text text-headline-lg-mobile md:text-headline-lg text-primary dark:text-aurum-lt tracking-[0.2em] uppercase shrink-0" href="#">
+                FORVM
+            </a>
+<!-- Desktop Navigation -->
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-label-caps text-label-caps uppercase tracking-[0.3em] text-on-surface-variant dark:text-surface-variant hover:text-aurum-dk transition-colors duration-300" href="#">
+                    Catalogo
+                </a>
+<a class="font-label-caps text-label-caps uppercase tracking-[0.3em] text-on-surface-variant dark:text-surface-variant hover:text-aurum-dk transition-colors duration-300" href="#">
+                    Come Funziona
+                </a>
+<a class="font-label-caps text-label-caps uppercase tracking-[0.3em] text-on-surface-variant dark:text-surface-variant hover:text-aurum-dk transition-colors duration-300" href="#">
+                    Chi Siamo
+                </a>
+<a aria-current="page" class="font-label-caps text-label-caps uppercase tracking-[0.3em] text-primary dark:text-aurum-lt border-b border-aurum-dk pb-1 hover:text-aurum-dk transition-colors duration-300" href="#">
+                    Host Partner
+                </a>
+</nav>
+<!-- Actions -->
+<div class="flex items-center gap-4">
+<button class="hidden md:flex font-button-text text-button-text uppercase tracking-[0.15em] bg-aurum-lt text-ink px-6 py-3 hover:bg-aurum-dk transition-colors duration-300 scale-95 active:opacity-80">
+                    Ordina Ora
+                </button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 0;">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[80vh] flex items-center justify-center overflow-hidden border-b border-travertine">
+<!-- Background Image -->
+<div class="absolute inset-0 z-0">
+<img alt="A stunning, highly detailed photograph of a luxurious Roman villa interior, transformed into a modern high-end vacation rental. The space features classic architectural elements like tall arched windows and exposed stone walls, elegantly contrasted with sleek contemporary furniture. Warm, golden hour sunlight streams through the windows, casting dramatic long shadows across a pristine travertine floor. The overall mood is affluent, timeless, and perfectly aligned with a premium hospitality brand." class="w-full h-full object-cover opacity-80 mix-blend-multiply filter contrast-125 sepia-[.2]" data-alt="A stunning, highly detailed photograph of a luxurious Roman villa interior, transformed into a modern high-end vacation rental. The space features classic architectural elements like tall arched windows and exposed stone walls, elegantly contrasted with sleek contemporary furniture. Warm, golden hour sunlight streams through the windows, casting dramatic long shadows across a pristine travertine floor. The overall mood is affluent, timeless, and perfectly aligned with a premium hospitality brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdwHP28DyfvT_uGVzg8G0bWQHymwVl-EwJwK74e_9Y97U197ncrrCzCzVtAK1BayvZ9MXQahyFSw0a-L71akuGtA8Um3dgek5RaYgTzJC-ibcsGkyN-AFi41fnJ9MzYmO9dIsaBrqoY0O1Lxl30dEZqx1ViAnwZ9nGX33fbHl6oObam1zlQLgf-v2lsAXOAVwTnzYzmQpj_gureVjoHflYw6jfZO0VtHMTFdal2nkpbF5lQT79tbhqZltvKaB7RznzgW6KjWVJlrHM">
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/60 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center mt-20">
+<span class="font-label-caps text-label-caps text-primary tracking-[0.3em] mb-4 block uppercase">Programma Affiliazione</span>
+<h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-ink max-w-4xl mx-auto mb-8 leading-tight">
+                    Offri un'Esperienza Stellata<br>ai Tuoi Ospiti
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-12">
+                    Eleva lo standard della tua casa vacanze a Roma. Diventa Host Partner FORVM e offri ai tuoi ospiti un servizio di alta gastronomia a domicilio, garantendoti una rendita passiva esclusiva.
+                </p>
+<div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+<a class="font-button-text text-button-text uppercase tracking-[0.15em] bg-aurum-lt text-ink px-8 py-4 hover:bg-aurum-dk transition-colors duration-300 w-full sm:w-auto text-center border border-aurum-lt" href="#contatto">
+                        Diventa Partner
+                    </a>
+<a class="font-button-text text-button-text uppercase tracking-[0.15em] bg-transparent text-ink px-8 py-4 border border-ink hover:bg-marble-mid transition-colors duration-300 w-full sm:w-auto text-center" href="#dettagli">
+                        Scopri il Programma
+                    </a>
+</div>
+</div>
+</section>
+<!-- Value Proposition / Details -->
+<section class="py-[120px] px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto" id="dettagli">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-5 md:col-start-2 order-2 md:order-1">
+<span class="font-label-caps text-label-caps text-aurum-dk tracking-[0.3em] mb-4 block uppercase">L'Eccellenza Condivisa</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-ink mb-6">
+                        Il Lusso della Tradizione Romana, Direttamente in Suite
+                    </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                        FORVM è più di un delivery: è un'esperienza culinaria monumentale. Affiliandoti al nostro programma, doterai la tua struttura di un servizio premium ineguagliabile, distinguendoti nel competitivo mercato dell'hospitality romana.
+                    </p>
+<ul class="space-y-4 font-body-md text-body-md text-on-surface-variant">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-aurum-dk mt-1" style="font-variation-settings: &quot;FILL&quot; 1;">done</span>
+<span class=""><strong>Nessun costo di attivazione.</strong> Il materiale informativo e l'integrazione sono completamente gratuiti.</span>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-aurum-dk mt-1" style="font-variation-settings: &quot;FILL&quot; 1;">done</span>
+<span class=""><strong>Esperienza Zero-Touch per te.</strong> Gestiamo noi ordine, preparazione e consegna. Tu raccogli solo i benefici.</span>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-aurum-dk mt-1" style="font-variation-settings: &quot;FILL&quot; 1;">done</span>
+<span class=""><strong>Materiale Elegante.</strong> Forniamo menu fisici curati nei minimi dettagli, coerenti con il design della tua struttura.</span>
+</li>
+</ul>
+</div>
+<div class="md:col-span-5 md:col-start-8 order-1 md:order-2 relative">
+<div class="aspect-[4/5] bg-marble-mid lapidary-border p-2 relative z-10">
+<img src="https://lh3.googleusercontent.com/aida-public/AB6AXuC34mP-8KhE_iSA-1bEU82k6LH5F-jrZgFfbSrtIot9J7vCiAd62d4iiaf3QRFpSaMoM9VcJhnmng2WwfFR8JaTsxAsYnltiFTFAyrOgH9ZVdromi-l3awxLr31adhmhmrYTOnqpV3CQR6XNiB9rPKTwspFYYFlZZzYL8PJmH9cMGMpvpOQnU7gaUwjjth9j4PFP1sL_XKHCYV7YkDM17kyyC3gW65PyG0Sn5RjK4wOcaj2eTlpK9gvpEGtvB0wWlCYzvaAD3N71bXa" alt="FORVM luxury delivery package" class="w-full h-full object-cover filter grayscale-[20%] sepia-[10%]">
+</div>
+<!-- Decorative architectural element -->
+<div class="absolute -bottom-8 -left-8 w-48 h-48 border-l border-b border-aurum-lt z-0"></div>
+</div>
+</div>
+</section>
+<!-- Earning Potential Grid -->
+<section class="bg-marble-mid py-[120px] border-y border-travertine">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-ink mb-4">Rendita Passiva Architetturale</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                        Come Host Partner, guadagni una commissione netta del <strong>10% su ogni ordine</strong> effettuato dai tuoi ospiti, tracciato in modo trasparente tramite codice univoco.
+                    </p>
+</div>
+<!-- Bento Grid for Earnings -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Scenario 1 -->
+<div class="bg-surface lapidary-border p-8 hover-aurum-top flex flex-col items-center text-center">
+<span class="font-label-caps text-label-caps text-stone tracking-[0.3em] uppercase mb-6">Scenario Base</span>
+<div class="w-16 h-16 rounded-full bg-marble-mid border border-travertine flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-aurum-dk text-3xl" style="font-variation-settings: &quot;FILL&quot; 0;">person</span>
+</div>
+<h3 class="font-headline-lg text-[24px] text-ink mb-2">1 Appartamento</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 flex-grow">
+                            Ideale per host indipendenti che gestiscono un singolo immobile di pregio.
+                        </p>
+<div class="w-full border-t border-travertine pt-6">
+<span class="block font-label-caps text-label-caps text-on-surface-variant mb-2">Stima Guadagno Mensile</span>
+<span class="font-headline-lg text-[32px] text-aurum-dk">€ 150 - 300</span>
+</div>
+</div>
+<!-- Scenario 2 -->
+<div class="bg-ink border border-aurum-dk p-8 relative flex flex-col items-center text-center transform md:-translate-y-4 shadow-2xl shadow-ink/20">
+<!-- Badge -->
+<div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-aurum-dk text-ink font-label-caps text-[10px] tracking-[0.2em] uppercase px-4 py-1">
+                            Più Comune
+                        </div>
+<span class="font-label-caps text-label-caps text-aurum-lt tracking-[0.3em] uppercase mb-6">Scenario Premium</span>
+<div class="w-16 h-16 rounded-full bg-inverse-surface border border-aurum-lt flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-aurum-lt text-3xl" style="font-variation-settings: &quot;FILL&quot; 0;">location_city</span>
+</div>
+<h3 class="font-headline-lg text-[24px] text-surface mb-2">3-5 Appartamenti</h3>
+<p class="font-body-md text-body-md text-secondary-fixed-dim mb-8 flex-grow">
+                            Per Property Manager con un portfolio boutique selezionato.
+                        </p>
+<div class="w-full border-t border-on-tertiary-fixed-variant pt-6">
+<span class="block font-label-caps text-label-caps text-surface-variant mb-2">Stima Guadagno Mensile</span>
+<span class="font-headline-lg text-[32px] text-aurum-lt">€ 500 - 1.200</span>
+</div>
+</div>
+<!-- Scenario 3 -->
+<div class="bg-surface lapidary-border p-8 hover-aurum-top flex flex-col items-center text-center">
+<span class="font-label-caps text-label-caps text-stone tracking-[0.3em] uppercase mb-6">Scenario Enterprise</span>
+<div class="w-16 h-16 rounded-full bg-marble-mid border border-travertine flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-aurum-dk text-3xl" style="font-variation-settings: &quot;FILL&quot; 0;">domain</span>
+</div>
+<h3 class="font-headline-lg text-[24px] text-ink mb-2">10+ Appartamenti</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 flex-grow">
+                            Per agenzie strutturate che cercano un partner gastronomico affidabile.
+                        </p>
+<div class="w-full border-t border-travertine pt-6">
+<span class="block font-label-caps text-label-caps text-on-surface-variant mb-2">Stima Guadagno Mensile</span>
+<span class="font-headline-lg text-[32px] text-aurum-dk">€ 2.000+</span>
+</div>
+</div>
+</div>
+<p class="font-body-md text-[14px] text-outline text-center mt-8 italic">
+                    *Le stime si basano su un tasso di conversione medio del 15% sugli ospiti soggiornanti e uno scontrino medio di 80€.
+                </p>
+</div>
+</section>
+<!-- Contact Form Section -->
+<section class="py-[120px] px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto" id="contatto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-[80px] items-start">
+<div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-display-lg text-ink mb-6">Poni le Fondamenta.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12">
+                        Invia la tua candidatura per diventare un Host Partner FORVM. Il nostro team valuterà il tuo profilo e ti contatterà per definire i dettagli dell'integrazione.
+                    </p>
+<div class="space-y-8">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-aurum-dk text-2xl" style="font-variation-settings: &quot;FILL&quot; 0;">mail</span>
+<div>
+<span class="block font-label-caps text-[12px] text-stone tracking-[0.2em] uppercase">Email Diretta</span>
+<a class="font-body-lg text-ink hover:text-aurum-dk transition-colors" href="mailto:partner@forvm.it">partner@forvm.it</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-aurum-dk text-2xl" style="font-variation-settings: &quot;FILL&quot; 0;">call</span>
+<div>
+<span class="block font-label-caps text-[12px] text-stone tracking-[0.2em] uppercase">Concierge Dedicato</span>
+<a class="font-body-lg text-ink hover:text-aurum-dk transition-colors" href="tel:+390612345678">+39 06 1234 5678</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Minimalist Form -->
+<div class="bg-surface lapidary-border p-8 md:p-12">
+<form action="#" class="space-y-8" method="POST">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="relative">
+<input class="input-ledger w-full font-body-lg text-ink peer pt-4 pb-2" id="nome" name="nome" placeholder=" " required="" type="text">
+<label class="absolute left-0 top-4 font-body-lg text-outline transition-all duration-300 peer-focus:-top-2 peer-focus:text-[12px] peer-focus:text-aurum-dk peer-focus:font-label-caps peer-focus:tracking-[0.1em] peer-focus:uppercase peer-valid:-top-2 peer-valid:text-[12px] peer-valid:font-label-caps peer-valid:tracking-[0.1em] peer-valid:uppercase" for="nome">
+                                    Nome e Cognome
+                                </label>
+</div>
+<div class="relative">
+<input class="input-ledger w-full font-body-lg text-ink peer pt-4 pb-2" id="email" name="email" placeholder=" " required="" type="email">
+<label class="absolute left-0 top-4 font-body-lg text-outline transition-all duration-300 peer-focus:-top-2 peer-focus:text-[12px] peer-focus:text-aurum-dk peer-focus:font-label-caps peer-focus:tracking-[0.1em] peer-focus:uppercase peer-valid:-top-2 peer-valid:text-[12px] peer-valid:font-label-caps peer-valid:tracking-[0.1em] peer-valid:uppercase" for="email">
+                                    Email Professionale
+                                </label>
+</div>
+</div>
+<div class="relative">
+<input class="input-ledger w-full font-body-lg text-ink peer pt-4 pb-2" id="azienda" name="azienda" placeholder=" " type="text">
+<label class="absolute left-0 top-4 font-body-lg text-outline transition-all duration-300 peer-focus:-top-2 peer-focus:text-[12px] peer-focus:text-aurum-dk peer-focus:font-label-caps peer-focus:tracking-[0.1em] peer-focus:uppercase peer-valid:-top-2 peer-valid:text-[12px] peer-valid:font-label-caps peer-valid:tracking-[0.1em] peer-valid:uppercase" for="azienda">
+                                Nome Struttura / Agenzia (Opzionale)
+                            </label>
+</div>
+<div class="relative">
+<select class="input-ledger w-full font-body-lg text-ink pt-4 pb-2 appearance-none cursor-pointer" id="numero_appartamenti" name="numero_appartamenti" required="">
+<option disabled="" hidden="" selected="" value=""></option>
+<option value="1">1 Appartamento</option>
+<option value="2-5">2 - 5 Appartamenti</option>
+<option value="6-10">6 - 10 Appartamenti</option>
+<option value="10+">Più di 10 Appartamenti</option>
+</select>
+<label class="absolute left-0 -top-2 text-[12px] text-outline font-label-caps tracking-[0.1em] uppercase pointer-events-none" for="numero_appartamenti">
+                                Numero di Appartamenti Gestiti
+                            </label>
+<span class="material-symbols-outlined absolute right-0 top-4 text-outline pointer-events-none" style="font-variation-settings: &quot;FILL&quot; 0;">expand_more</span>
+</div>
+<button class="w-full font-button-text text-button-text uppercase tracking-[0.15em] bg-ink text-surface px-8 py-4 hover:bg-on-tertiary-fixed-variant transition-colors duration-300 mt-4 border border-ink" type="submit">
+                            Invia Candidatura
+                        </button>
+<p class="font-body-md text-[12px] text-outline text-center mt-4">
+                            Inviando la richiesta, accetti la nostra <a class="underline hover:text-ink" href="#">Privacy Policy</a>.
+                        </p>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-ink dark:bg-inverse-surface w-full mt-20 flex flex-col items-center gap-gutter py-margin-desktop px-margin-desktop border-t border-aurum-dk">
+<div class="font-button-text text-headline-lg text-aurum-lt tracking-[0.2em] mb-6 uppercase">
+            FORVM
+        </div>
+<nav class="flex flex-wrap justify-center gap-8 mb-8">
+<a class="font-label-caps text-label-caps text-marble-dk opacity-80 hover:text-white transition-opacity uppercase tracking-[0.15em] cursor-pointer" href="#">
+                Privacy Policy
+            </a>
+<a class="font-label-caps text-label-caps text-marble-dk opacity-80 hover:text-white transition-opacity uppercase tracking-[0.15em] cursor-pointer" href="#">
+                Termini di Servizio
+            </a>
+<a class="font-label-caps text-label-caps text-marble-dk opacity-80 hover:text-white transition-opacity uppercase tracking-[0.15em] cursor-pointer" href="#">
+                Contatti
+            </a>
+<a class="font-label-caps text-label-caps text-marble-dk opacity-80 hover:text-white transition-opacity uppercase tracking-[0.15em] cursor-pointer" href="#">
+                FAQ
+            </a>
+</nav>
+<div class="font-label-caps text-label-caps text-aurum-lt uppercase tracking-[0.15em] text-center max-w-lg">
+            © MMXXIV FORVM GOURMET. REGOLE D'ORO DELLA CUCINA ROMANA.
+        </div>
+</footer>
+
+
+</body></html>

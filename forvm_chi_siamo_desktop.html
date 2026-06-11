@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html class="light" lang="it"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FORVM - Chi Siamo</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&amp;family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed-variant": "#514531",
+                        "on-primary-fixed": "#261a00",
+                        "aurum-dk": "#8B6B28",
+                        "surface-variant": "#e6e2da",
+                        "surface-bright": "#fdf9f1",
+                        "inverse-surface": "#31302b",
+                        "surface": "#fdf9f1",
+                        "on-surface-variant": "#4e4637",
+                        "on-background": "#1c1c17",
+                        "secondary-fixed-dim": "#cec5be",
+                        "surface-container-high": "#ece8e0",
+                        "inverse-on-surface": "#f4f0e8",
+                        "surface-tint": "#785a04",
+                        "on-secondary-fixed": "#1f1b17",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed": "#231a0a",
+                        "primary-container": "#b8933f",
+                        "on-tertiary": "#ffffff",
+                        "surface-dim": "#dddad2",
+                        "primary-fixed": "#ffdf9e",
+                        "on-error-container": "#93000a",
+                        "surface-container-highest": "#e6e2da",
+                        "on-surface": "#1c1c17",
+                        "tertiary-fixed-dim": "#d6c4aa",
+                        "tertiary": "#6a5c47",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container": "#f1ede5",
+                        "marble-mid": "#EDE7D9",
+                        "outline": "#7f7666",
+                        "on-secondary-container": "#68615c",
+                        "ink": "#2C2419",
+                        "on-tertiary-container": "#3a2f1d",
+                        "tertiary-fixed": "#f3e0c5",
+                        "travertine": "#D4C9B0",
+                        "outline-variant": "#d1c5b2",
+                        "aurum-lt": "#D4AB5A",
+                        "on-primary": "#ffffff",
+                        "tertiary-container": "#a6967e",
+                        "secondary": "#645d58",
+                        "marble-dk": "#E0D8C8",
+                        "background": "#fdf9f1",
+                        "on-secondary": "#ffffff",
+                        "primary": "#785a04",
+                        "inverse-primary": "#eac168",
+                        "on-primary-fixed-variant": "#5b4300",
+                        "on-error": "#ffffff",
+                        "surface-container-low": "#f7f3eb",
+                        "primary-fixed-dim": "#eac168",
+                        "secondary-container": "#e7ded7",
+                        "secondary-fixed": "#eae1da",
+                        "on-primary-container": "#402e00",
+                        "wa-green": "#25D366",
+                        "on-secondary-fixed-variant": "#4b4641",
+                        "error": "#ba1a1a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "margin-desktop": "64px",
+                        "gutter": "24px",
+                        "container-max": "1280px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["DM Sans"],
+                        "body-lg": ["DM Sans"],
+                        "label-caps": ["Cinzel"],
+                        "button-text": ["Cinzel"],
+                        "headline-lg-mobile": ["Cormorant Garamond"],
+                        "headline-lg": ["Cormorant Garamond"],
+                        "display-lg": ["Cormorant Garamond"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "300" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "label-caps": ["14px", { "lineHeight": "1.0", "letterSpacing": "0.3em", "fontWeight": "700" }],
+                        "button-text": ["14px", { "lineHeight": "1.0", "letterSpacing": "0.15em", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "500" }],
+                        "headline-lg": ["40px", { "lineHeight": "1.2", "fontWeight": "500" }],
+                        "display-lg": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: theme('colors.surface');
+            color: theme('colors.on-surface');
+            font-family: theme('fontFamily.body-md');
+        }
+        .box-card {
+            background-color: theme('colors.surface-container-lowest');
+            border: 1px solid theme('colors.travertine');
+            transition: all 0.3s ease;
+        }
+        .box-card:hover {
+            border-top: 4px solid theme('colors.aurum-lt');
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="bg-surface dark:bg-on-background w-full top-0 sticky z-50 border-b border-travertine dark:border-on-tertiary-fixed-variant">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-unit max-w-container-max mx-auto">
+<!-- Logo -->
+<div class="font-button-text text-headline-lg text-primary dark:text-aurum-lt tracking-[0.2em] uppercase">
+                FORVM
+            </div>
+<!-- Navigation Links (Desktop) -->
+<nav class="hidden md:flex gap-8 items-center font-label-caps text-label-caps uppercase tracking-[0.3em]">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-aurum-dk transition-colors duration-300" href="#">Catalogo</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-aurum-dk transition-colors duration-300" href="#">Come Funziona</a>
+<a class="text-primary dark:text-aurum-lt border-b border-aurum-lt pb-1 hover:text-aurum-dk transition-colors duration-300" href="#">Chi Siamo</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-aurum-dk transition-colors duration-300" href="#">Host Partner</a>
+</nav>
+<!-- Trailing Action -->
+<button class="hidden md:block bg-primary text-on-primary font-button-text uppercase tracking-[0.15em] px-6 py-3 rounded scale-95 active:opacity-80 transition-all hover:bg-surface-tint">
+                Ordina Ora
+            </button>
+<!-- Mobile Menu Icon -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</header>
+<main>
+<!-- Hero Storytelling Section -->
+<section class="w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-[80px] md:py-[120px] flex flex-col items-center text-center">
+<h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-primary mb-6">L'Anima di Roma,<br/>Sulla Tua Tavola.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-16">
+                Un viaggio nel gusto attraverso la millenaria storia del territorio laziale. Selezioniamo le eccellenze dei piccoli produttori artigianali per portarti l'autentica esperienza romana, senza compromessi.
+            </p>
+<div class="w-full h-[400px] md:h-[600px] bg-marble-mid relative overflow-hidden group box-card">
+<img alt="Scorcio di Roma classica" class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700" data-alt="A sweeping, monumental view of classic Roman architecture bathed in warm, golden-hour sunlight. The scene emphasizes the timeless beauty of travertine stone, ancient arches, and cobblestone streets. The mood is historic, artisanal, and premium, evoking a sense of enduring quality. High contrast between deep shadows and glowing stonework, aligning with a sophisticated light-mode UI aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8QxRhgiS-92y7HXLESzn9T-Wy89w1ugCoBay6CqYIwtgqYqztlueWQsJcxVI11QB9Hewg8-qomYq2KTIfqRhTUYvxvEiOjzYo6UMG-Ll03xvfOV36Qob_rKoGJ1ZIfhsT-Ifl8E4P-SL3xhNWWZHmz1zB2VUSj5rG666HSvcMhODwJvTEIoPg8o-lpRCLW-q6jxuole_R5Yh1fSszxBn-59rNGwi_3y6vvPqsQ4YM4somVG_536l4OBQorbkDZhId_RZxLd-pevc0"/>
+</div>
+</section>
+<!-- Il Nostro Manifesto (Dark Section) -->
+<section class="w-full bg-ink py-[100px] md:py-[160px] px-margin-mobile md:px-margin-desktop text-center">
+<div class="max-w-3xl mx-auto">
+<h2 class="font-label-caps text-label-caps uppercase tracking-[0.3em] text-marble-dk mb-8">Il Nostro Manifesto</h2>
+<p class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-aurum-lt leading-snug">
+                    "Crediamo nel valore del tempo. Il tempo della stagionatura, il tempo della raccolta, il tempo dedicato a creare qualcosa di perfetto. Rifiutiamo l'industria, celebriamo l'artigiano. Questa è la nostra promessa."
+                </p>
+</div>
+</section>
+<!-- Partner Producers (Bento Grid) -->
+<section class="w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-[80px] md:py-[120px]">
+<div class="text-center mb-16">
+<h2 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-primary mb-4">I Custodi del Gusto</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">La nostra filiera corta. Solo produttori d'eccellenza del Lazio.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Producer 1 -->
+<div class="box-card flex flex-col h-full group">
+<div class="h-64 overflow-hidden relative">
+<img alt="Norcineria Jacovone" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A skilled Italian artisan butcher working in a traditional norcineria, surrounded by high-quality cured meats hanging from the ceiling. The lighting is moody and warm, focusing on the texture of the meat and the artisan's hands. The aesthetic is rustic yet premium, highlighting craftsmanship and heritage in a clean, professional setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoprBbDMG9gUThCOguJdDr3Y-J6XZ2easD5yHf07jqr8IIwf16qrMmCu7nkdXOlF8IPH4TEm1JskPRbXMT5jheinKB_W_n19NkmzjcBO4LLcRIo4lr5AQiv4p8D7Yw4bJb86s5md74HKtB85uliZPWvvpuDKdiIh-7Y6reDqnNqb6YwadYCB31TrvuAcY-Hud9d6hKViZBFPq4deFaaoTEOlX43etwmRjmxxrF_GTaDnG30bX51M93CsaQI4bHm34-Hw9RifztV7Jy"/>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<span class="font-label-caps text-label-caps text-aurum-dk mb-2">Norcineria</span>
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-[32px] text-primary mb-4">Jacovone</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
+                            Da tre generazioni, la famiglia Jacovone seleziona e lavora le migliori carni del territorio. Il loro Guanciale è il cuore pulsante della nostra Amatriciana, stagionato lentamente nelle cantine in pietra.
+                        </p>
+<button class="self-start font-button-text text-button-text uppercase tracking-[0.15em] text-primary hover:text-aurum-dk border-b border-primary pb-1 transition-colors">
+                            Scopri di più
+                        </button>
+</div>
+</div>
+<!-- Producer 2 -->
+<div class="box-card flex flex-col h-full group">
+<div class="h-64 overflow-hidden relative">
+<img alt="Caseificio Bernardi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A pristine, traditional Italian cheese-making facility showing large wheels of aged Pecorino Romano resting on wooden shelves. Soft, natural light filters in, highlighting the textured rind of the cheese. The mood is authentic, clean, and artisanal. The color palette features creamy whites, pale yellows, and natural wood tones, fitting perfectly into a high-end Roman culinary context." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAh11y0rzfzNQb3y3aks59e8l8DEonHmzEtdV1cZa_Y_X4LlIF-2AZvODSW_oRMFZb6Vf6E7PvdWaWQynYDW6a-E5DcyQzhVBKrhJVwez2bT_Fz6JtfEcHlmpgOh3fpHSReJOisCZ2HInvwzRwzPSxEvWNGkqxz1Expt6RkSuQFGujhlyk1MhA_f-Ml1F55wa00Bd1yNxNlfLxbUSRsl_xf19WB7fuRmh8VD122yFO6YgR4fsOWXfWxBmTzyGS051GHNcUZVLFMDr6S"/>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<span class="font-label-caps text-label-caps text-aurum-dk mb-2">Caseificio</span>
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-[32px] text-primary mb-4">Bernardi</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
+                            Il vero Pecorino Romano DOP nasce qui, sulle colline dell'Agro Romano. Latte di pecora locale e una salatura fatta rigorosamente a mano, come impone l'antica tradizione dei pastori laziali.
+                        </p>
+<button class="self-start font-button-text text-button-text uppercase tracking-[0.15em] text-primary hover:text-aurum-dk border-b border-primary pb-1 transition-colors">
+                            Scopri di più
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Values -->
+<section class="w-full bg-surface-container-low py-[80px]">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-4xl text-aurum-dk mb-4" style="font-variation-settings: 'FILL' 0;">handyman</span>
+<h4 class="font-headline-lg text-2xl text-primary mb-2">Artigianalità</h4>
+<p class="font-body-md text-on-surface-variant">Lavorazioni manuali, rispetto della materia prima e zero scorciatoie industriali.</p>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-4xl text-aurum-dk mb-4" style="font-variation-settings: 'FILL' 0;">history_edu</span>
+<h4 class="font-headline-lg text-2xl text-primary mb-2">Tradizione</h4>
+<p class="font-body-md text-on-surface-variant">Ricette autentiche tramandate, per portare in tavola la vera anima di Roma.</p>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-4xl text-aurum-dk mb-4" style="font-variation-settings: 'FILL' 0;">local_shipping</span>
+<h4 class="font-headline-lg text-2xl text-primary mb-2">Consegna 48h</h4>
+<p class="font-body-md text-on-surface-variant">Dal produttore alla tua cucina in tempi brevi, garantendo la massima freschezza.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-ink dark:bg-inverse-surface w-full mt-20 border-t border-aurum-dk flex flex-col items-center gap-gutter py-margin-desktop px-margin-desktop">
+<!-- Brand Logo in Footer -->
+<div class="font-button-text text-headline-lg text-aurum-lt">
+            FORVM
+        </div>
+<!-- Footer Links -->
+<nav class="flex flex-wrap justify-center gap-6 font-label-caps text-label-caps uppercase">
+<a class="text-marble-dk opacity-80 hover:text-white transition-opacity cursor-pointer" href="#">Privacy Policy</a>
+<a class="text-marble-dk opacity-80 hover:text-white transition-opacity cursor-pointer" href="#">Termini di Servizio</a>
+<a class="text-marble-dk opacity-80 hover:text-white transition-opacity cursor-pointer" href="#">Contatti</a>
+<a class="text-marble-dk opacity-80 hover:text-white transition-opacity cursor-pointer" href="#">FAQ</a>
+</nav>
+<!-- Copyright -->
+<div class="text-aurum-lt dark:text-primary-fixed font-label-caps text-label-caps text-center mt-8">
+            © MMXXIV FORVM GOURMET. REGOLE D'ORO DELLA CUCINA ROMANA.
+        </div>
+</footer>
+</body></html>
